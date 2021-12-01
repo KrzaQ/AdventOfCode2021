@@ -1,4 +1,14 @@
 {
+    "day01": {
+        "desc": "Sonar Sweep",
+        "path": "solutions/day01",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby", "C++"
     ]
