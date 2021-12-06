@@ -10,13 +10,15 @@ I'm using various languages to provide solutions.
 | 03 | [Binary Diagnostic][day03] | [:heavy_check_mark:](solutions/day03/main.rb) |  |
 | 04 | [Giant Squid][day04] | [:heavy_check_mark:](solutions/day04/main.rb) |  |
 | 05 | [Hydrothermal Venture][day05] | [:heavy_check_mark:](solutions/day05/main.rb) |  |
+| 06 | [Lanternfish][day06] | [:heavy_check_mark:](solutions/day06/main.rb) |  |
 
 [day01]: https://adventofcode.com/2021/day/1
 [day02]: https://adventofcode.com/2021/day/2
 [day03]: https://adventofcode.com/2021/day/3
 [day04]: https://adventofcode.com/2021/day/4
 [day05]: https://adventofcode.com/2021/day/5
+[day06]: https://adventofcode.com/2021/day/6
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2021-12-05 06:28:22 +0100
+Readme generated on 2021-12-06 06:31:36 +0100
