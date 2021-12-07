@@ -11,6 +11,7 @@ I'm using various languages to provide solutions.
 | 04 | [Giant Squid][day04] | [:heavy_check_mark:](solutions/day04/main.rb) |  |
 | 05 | [Hydrothermal Venture][day05] | [:heavy_check_mark:](solutions/day05/main.rb) |  |
 | 06 | [Lanternfish][day06] | [:heavy_check_mark:](solutions/day06/main.rb) |  |
+| 07 | [The Treachery of Whales][day07] | [:heavy_check_mark:](solutions/day07/main.rb) |  |
 
 [day01]: https://adventofcode.com/2021/day/1
 [day02]: https://adventofcode.com/2021/day/2
@@ -18,7 +19,8 @@ I'm using various languages to provide solutions.
 [day04]: https://adventofcode.com/2021/day/4
 [day05]: https://adventofcode.com/2021/day/5
 [day06]: https://adventofcode.com/2021/day/6
+[day07]: https://adventofcode.com/2021/day/7
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2021-12-06 06:31:36 +0100
+Readme generated on 2021-12-07 06:14:48 +0100
