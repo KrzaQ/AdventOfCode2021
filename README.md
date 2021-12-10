@@ -14,6 +14,7 @@ I'm using various languages to provide solutions.
 | 07 | [The Treachery of Whales][day07] | [:heavy_check_mark:](solutions/day07/main.rb) |  |
 | 08 | [Seven Segment Search][day08] | [:heavy_check_mark:](solutions/day08/main.rb) |  |
 | 09 | [Smoke Basin][day09] | [:heavy_check_mark:](solutions/day09/main.rb) |  |
+| 10 | [Syntax Scoring][day10] | [:heavy_check_mark:](solutions/day10/main.rb) |  |
 
 [day01]: https://adventofcode.com/2021/day/1
 [day02]: https://adventofcode.com/2021/day/2
@@ -24,7 +25,8 @@ I'm using various languages to provide solutions.
 [day07]: https://adventofcode.com/2021/day/7
 [day08]: https://adventofcode.com/2021/day/8
 [day09]: https://adventofcode.com/2021/day/9
+[day10]: https://adventofcode.com/2021/day/10
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2021-12-09 06:29:27 +0100
+Readme generated on 2021-12-10 06:32:30 +0100
