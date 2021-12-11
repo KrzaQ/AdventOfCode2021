@@ -15,6 +15,7 @@ I'm using various languages to provide solutions.
 | 08 | [Seven Segment Search][day08] | [:heavy_check_mark:](solutions/day08/main.rb) |  |
 | 09 | [Smoke Basin][day09] | [:heavy_check_mark:](solutions/day09/main.rb) |  |
 | 10 | [Syntax Scoring][day10] | [:heavy_check_mark:](solutions/day10/main.rb) |  |
+| 11 | [Dumbo Octopus][day11] | [:heavy_check_mark:](solutions/day11/main.rb) |  |
 
 [day01]: https://adventofcode.com/2021/day/1
 [day02]: https://adventofcode.com/2021/day/2
@@ -26,7 +27,8 @@ I'm using various languages to provide solutions.
 [day08]: https://adventofcode.com/2021/day/8
 [day09]: https://adventofcode.com/2021/day/9
 [day10]: https://adventofcode.com/2021/day/10
+[day11]: https://adventofcode.com/2021/day/11
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2021-12-10 06:32:30 +0100
+Readme generated on 2021-12-11 06:51:10 +0100
