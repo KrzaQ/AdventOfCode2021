@@ -17,6 +17,7 @@ I'm using various languages to provide solutions.
 | 10 | [Syntax Scoring][day10] | [:heavy_check_mark:](solutions/day10/main.rb) |  |
 | 11 | [Dumbo Octopus][day11] | [:heavy_check_mark:](solutions/day11/main.rb) |  |
 | 12 | [Passage Pathing][day12] | [:heavy_check_mark:](solutions/day12/main.rb) |  |
+| 13 | [Transparent Origami][day13] | [:heavy_check_mark:](solutions/day13/main.rb) |  |
 
 [day01]: https://adventofcode.com/2021/day/1
 [day02]: https://adventofcode.com/2021/day/2
@@ -30,7 +31,8 @@ I'm using various languages to provide solutions.
 [day10]: https://adventofcode.com/2021/day/10
 [day11]: https://adventofcode.com/2021/day/11
 [day12]: https://adventofcode.com/2021/day/12
+[day13]: https://adventofcode.com/2021/day/13
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2021-12-12 07:01:22 +0100
+Readme generated on 2021-12-13 06:27:15 +0100
