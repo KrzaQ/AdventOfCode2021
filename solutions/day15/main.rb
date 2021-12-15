@@ -24,7 +24,7 @@ def dij map, from, target
         distances[node] = dist
         around = points_around(node[0], node[1], xsize, ysize)
             .reject{ distances.has_key? _1 }
-        todos.concat around.map{ [_1, dist + map.dig(*_1.reverse)] }
+        around.map{ [_1, dist + map.dig(*_1.reverse)] }.each{ todos.push _1 }
 
         break if node == target
     end
