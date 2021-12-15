@@ -4,9 +4,6 @@ require 'pqueue'
 
 DATA = File.read('data.txt').lines.map{ _1.strip.chars.map(&:to_i) }
 
-X_SIZE = DATA[0].size
-Y_SIZE = DATA.size
-
 def points_around x, y, xsize, ysize
     [[x - 1, y], [x + 1, y], [x, y - 1], [x, y + 1]]
         .reject{ _1[0] < 0 }
@@ -15,30 +12,21 @@ def points_around x, y, xsize, ysize
         .reject{ _1[1] >= ysize }
 end
 
-def dij map, from, to
-    distances = {
-        from => 0
-    }
-
-    visited = Set[]
-
+def dij map, from, target
+    distances = { }
     todos = PQueue.new([[from, 0]]){ _1[1] < _2[1] }
-
-    xsize = map[0].size
-    ysize = map.size
+    xsize, ysize = [map[0].size, map.size]
 
     loop do
         break if todos.size == 0
         node, dist = todos.pop
-        next if visited.include? node
-
-        visited.add node
+        next if distances.has_key? node
         distances[node] = dist
         around = points_around(node[0], node[1], xsize, ysize)
-            .reject{ visited.include? _1 }
+            .reject{ distances.has_key? _1 }
         todos.concat around.map{ [_1, dist + map.dig(*_1.reverse)] }
 
-        break if visited.include? to
+        break if node == target
     end
     distances
 end
@@ -59,6 +47,7 @@ def make_bigger_data
     (lines * 5).each_with_index.map do |line, index|
         line.map{ _1 + index / DATA.size }
             .map{ _1 > 9 ? _1 - 9 : _1 }
+            .freeze
     end
 end
 
