@@ -146,6 +146,10 @@
             {
                 "language": "Ruby",
                 "path": "main.rb"
+            },
+            {
+                "language": "C++",
+                "path": "main.cpp"
             }
         ]
     },
