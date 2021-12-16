@@ -20,6 +20,7 @@ I'm using various languages to provide solutions.
 | 13 | [Transparent Origami][day13] | [:heavy_check_mark:](solutions/day13/main.rb) |  |
 | 14 | [Extended Polymerization][day14] | [:heavy_check_mark:](solutions/day14/main.rb) |  |
 | 15 | [Chiton][day15] | [:heavy_check_mark:](solutions/day15/main.rb) | [:heavy_check_mark:](solutions/day15/main.cpp) |
+| 16 | [Packet Decoder][day16] | [:heavy_check_mark:](solutions/day16/main.rb) |  |
 
 [day01]: https://adventofcode.com/2021/day/1
 [day02]: https://adventofcode.com/2021/day/2
@@ -36,7 +37,8 @@ I'm using various languages to provide solutions.
 [day13]: https://adventofcode.com/2021/day/13
 [day14]: https://adventofcode.com/2021/day/14
 [day15]: https://adventofcode.com/2021/day/15
+[day16]: https://adventofcode.com/2021/day/16
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2021-12-15 09:03:38 +0100
+Readme generated on 2021-12-16 06:56:52 +0100

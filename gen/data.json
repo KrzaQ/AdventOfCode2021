@@ -153,6 +153,16 @@
             }
         ]
     },
+    "day16": {
+        "desc": "Packet Decoder",
+        "path": "solutions/day16",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby", "C++"
     ]
