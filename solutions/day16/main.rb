@@ -1,7 +1,9 @@
 #!/usr/bin/ruby
 
-DATA = File.read('data.txt').strip.chars.map{ _1.to_i(16).to_s(2) }
-    .map{ '%04d' % _1.to_i }.join.chars
+DATA = File.read('data.txt').strip.chars
+    .map{ _1.to_i(16).to_s(2) }
+    .map{ '%04d' % _1.to_i }
+    .join.chars
 
 def parse_packet data
     v = data[0...3].join.to_i(2)
@@ -21,41 +23,27 @@ def parse_packet data
         return [len, v, id, val]
     else
         len_type_id = data[0]
-        if len_type_id == ?0
-            sub_packets_bits = data[1...16].join.to_i(2)
-            read = 0
-            sub_packets = []
-            arr = nil
-            data = data[16..-1]
-            len += 16
-            loop do
-                arr = parse_packet data
-                read += arr[0]
-                len += arr[0]
-                data = data[arr[0]..-1]
-                sub_packets.push arr
-                break if read >= sub_packets_bits
-            end
-            return [len, v, id, sub_packets]
+        read = 0
+        sub_packets = []
+        sub_packets_val_len = len_type_id == ?0 ? 15 : 11
+        sub_packets_val = data[1..sub_packets_val_len].join.to_i(2)
+        len += sub_packets_val_len + 1
+        data = data.drop(sub_packets_val_len + 1)
+        finished = if len_type_id == ?0
+            ->(){ read >= sub_packets_val }
         elsif len_type_id == ?1
-            num_sub_packets = data[1...12].join.to_i(2)
-            read = 0
-            sub_packets = []
-            arr = nil
-            data = data[12..-1]
-            len += 12
-            loop do
-                arr = parse_packet data
-                read += 1
-                data = data[arr[0]..-1]
-                len += arr[0]
-                sub_packets.push arr
-                break if read >= num_sub_packets
-            end
-            return [len, v, id, sub_packets]
-        else
-            raise :lol
+            ->(){ sub_packets.size >= sub_packets_val }
         end
+
+        while not finished[]
+            arr = parse_packet data
+            read += arr[0]
+            len += arr[0]
+            data = data.drop arr[0]
+            sub_packets.push arr
+        end
+
+        return [len, v, id, sub_packets]
     end
 end
 
