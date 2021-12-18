@@ -22,6 +22,7 @@ I'm using various languages to provide solutions.
 | 15 | [Chiton][day15] | [:heavy_check_mark:](solutions/day15/main.rb) | [:heavy_check_mark:](solutions/day15/main.cpp) |
 | 16 | [Packet Decoder][day16] | [:heavy_check_mark:](solutions/day16/main.rb) |  |
 | 17 | [Trick Shot][day17] | [:heavy_check_mark:](solutions/day17/main.rb) |  |
+| 18 | [Snailfish][day18] | [:heavy_check_mark:](solutions/day18/main.rb) |  |
 
 [day01]: https://adventofcode.com/2021/day/1
 [day02]: https://adventofcode.com/2021/day/2
@@ -40,7 +41,8 @@ I'm using various languages to provide solutions.
 [day15]: https://adventofcode.com/2021/day/15
 [day16]: https://adventofcode.com/2021/day/16
 [day17]: https://adventofcode.com/2021/day/17
+[day18]: https://adventofcode.com/2021/day/18
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2021-12-17 06:46:11 +0100
+Readme generated on 2021-12-18 08:30:30 +0100
