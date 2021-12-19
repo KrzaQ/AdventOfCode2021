@@ -183,6 +183,16 @@
             }
         ]
     },
+    "day19": {
+        "desc": "Beacon Scanner",
+        "path": "solutions/day19",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby", "C++"
     ]
