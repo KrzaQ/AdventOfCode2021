@@ -47,13 +47,19 @@ end
 POSSIBLE_ROLLS = [1,2,3].product([1,2,3],[1,2,3])
     .map(&:sum).group_by(&:itself).map{ [_1, _2.size] }.to_h
 
+MEMO = {}
 def dfs game, depth = 1
+    mem = MEMO[[game.players, depth]]
+    return [mem] if mem
+
     POSSIBLE_ROLLS.map do |roll, freq|
         g = game.clone
         if g.round roll
-            (depth % 2 == 1) ? [freq, 0] : [0, freq]
+            depth % 2 == 1 ? [freq, 0] : [0, freq]
         else
-            dfs(g, depth+1).transpose.map{ _1.sum * freq }
+            val = dfs(g, depth+1).transpose.map(&:sum)
+            MEMO[[g.players, depth+1]] = val unless MEMO[[g.players, depth+1]]
+            val.map{ _1 * freq }
         end
     end
 end
