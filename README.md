@@ -25,6 +25,7 @@ I'm using various languages to provide solutions.
 | 18 | [Snailfish][day18] | [:heavy_check_mark:](solutions/day18/main.rb) |  |
 | 19 | [Beacon Scanner][day19] | [:heavy_check_mark:](solutions/day19/main.rb) |  |
 | 20 | [Trench Map][day20] | [:heavy_check_mark:](solutions/day20/main.rb) |  |
+| 21 | [Dirac Dice][day21] | [:heavy_check_mark:](solutions/day21/main.rb) |  |
 
 [day01]: https://adventofcode.com/2021/day/1
 [day02]: https://adventofcode.com/2021/day/2
@@ -46,7 +47,8 @@ I'm using various languages to provide solutions.
 [day18]: https://adventofcode.com/2021/day/18
 [day19]: https://adventofcode.com/2021/day/19
 [day20]: https://adventofcode.com/2021/day/20
+[day21]: https://adventofcode.com/2021/day/21
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2021-12-20 06:57:48 +0100
+Readme generated on 2021-12-21 07:18:10 +0100
